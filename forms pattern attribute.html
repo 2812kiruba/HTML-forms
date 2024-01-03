@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="username">Username:(Username must be at least 5 characters)</label><br>
+        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]{5,}"
+            title="Username must be at least 5 characters long and can only contain letters and numbers" required>
+      <!-- <span id="usernameError" class="error"></span>  --><br>
+      <br>
+    
+        <label for="password">Password:(must be at least 6 characters)</label><br>
+        <input type="password" id="password" name="password" pattern=".{6,}"
+            title="Password must be at least 6 characters long" required><br>
+            <br>
+        <!-- <span id="passwordError" class="error"></span> -->
+    
+        <input type="submit" value="Login">
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="text" id="username" name="username" placeholder="User Name" required>
+        <span id="usernameError" class="error"></span><br>
+    <br>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <span id="emailError" class="error"></span><br>
+    <br>
+        <input type="password" id="password" name="password" placeholder="Password (6 or more characters)" minlength="6"
+            required>
+        <span id="passwordError" class="error"></span><br>
+    <br>
+      <label for="dob">DOB:</label> <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy" required>
+        <span id="dobError" class="error"></span><br>
+    <br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others" required>
+        <label for="others">Others</label><br>
+    <br>
+        <label for="remarks">Remarks:</label><br><br>
+        <textarea id="remarks" name="remarks" placeholder="Please Enter your remarks (if any)"></textarea><br>
+    <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
